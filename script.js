@@ -52,8 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ==========================================
     //  MASSIVE DATABASE OF ACTIVITIES
-    // ==========================================
-    const allActivities = [
+    // ==========================================   
     
     const allActivities = [
       
