@@ -4,6 +4,46 @@ document.addEventListener('DOMContentLoaded', () => {
     const randomizeButton = document.getElementById('randomize-button');
     const categoryButtons = document.querySelectorAll('.category-button');
 
+    // Mappings to make categories look more professional in the Display Card
+    const categoryPrettyNames = {
+        "Standing Movement": "Physical Reset",
+        "Sitting Movement": "Desk Mobility",
+        "Mind Games": "Cognitive Focus",
+        "Orienteering": "Visual Calibration",
+        "Mantras": "Mindset Anchor",
+        "Sensory Grounding": "Sensory Reset",
+        "Quick Visualization": "Mental Vacation",
+        "Posture Check": "Ergonomics",
+        "Gratitude Prompt": "Positive Psychology",
+        "Guided Breathing": "Breathwork",
+        "Floor Work (Yoga & Stretching)": "Deep Stretch",
+        "Pain Management": "Somatic Relief",
+        "Journal Prompt": "Self-Reflection",
+        "Neck Mobility & Relief": "Tension Release"
+    };
+
+    // Icons to add visual flair to the cards
+    const categoryIcons = {
+        "Standing Movement": "🧍",
+        "Sitting Movement": "🪑",
+        "Mind Games": "🧩",
+        "Orienteering": "🧭",
+        "Mantras": "💭",
+        "Sensory Grounding": "🌿",
+        "Quick Visualization": "🏔️",
+        "Posture Check": "📏",
+        "Gratitude Prompt": "🙏",
+        "Guided Breathing": "🌬️",
+        "Floor Work (Yoga & Stretching)": "🧘",
+        "Pain Management": "❤️‍🩹",
+        "Journal Prompt": "📓",
+        "Neck Mobility & Relief": "🧣"
+    };
+
+    // ==========================================
+    //  MASSIVE DATABASE OF ACTIVITIES
+    // ==========================================
+
     // ==========================================
     //  MASSIVE DATABASE OF ACTIVITIES
     // ==========================================
