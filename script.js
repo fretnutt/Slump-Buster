@@ -21,7 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
         "Journal Prompt": "Self-Reflection",
         "Neck Mobility & Relief": "Tension Release"
         "Social Connection": "Team Connection",   
-        "Workspace Zen": "Environment"  
+        "Workspace Zen": "Environment" 
+        "Creative Spark": "Creative Spark",
+        "Productivity Flow": "Deep Work",
+        "Evening Wind-Down": "Shutdown Ritual" 
     };
 
     // Icons to add visual flair to the cards
@@ -40,6 +43,11 @@ document.addEventListener('DOMContentLoaded', () => {
         "Pain Management": "❤️‍🩹",
         "Journal Prompt": "📓",
         "Neck Mobility & Relief": "🧣"
+        "Social Connection": "💬",
+        "Workspace Zen": "🪴",
+        "Creative Spark": "💡",
+        "Productivity Flow": "⚡",
+        "Evening Wind-Down": "🌙"
     };
 
     
@@ -2233,7 +2241,103 @@ document.addEventListener('DOMContentLoaded', () => {
       { category: "Workspace Zen", title: "Book Stack", description: "Straighten any books or notebooks on your desk. Align edges." },
       { category: "Workspace Zen", title: "Cord Slack", description: "Ensure your laptop power cord isn't a trip hazard. Route it safely." },
       { category: "Workspace Zen", title: "Final Sweep", description: "Stand up. Look at your desk. Move one item to make it look 1% better." },
+      // --- BATCH 10: CREATIVITY, PRODUCTIVITY & SHUTDOWN ---
 
+      // -- CREATIVE SPARK (Divergent Thinking) --
+      { category: "Creative Spark", title: "Alternative Uses", description: "Look at your coffee mug (or any object). List 3 uses for it other than holding liquid (e.g., circle tracer, paperweight, bug catcher)." },
+      { category: "Creative Spark", title: "The Doodle", description: "Draw a squiggle on a piece of paper. Now, turn that squiggle into a recognizable drawing (a face, an animal, a landscape)." },
+      { category: "Creative Spark", title: "Synesthesia", description: "If the project you are working on right now was a type of food, what would it be and why?" },
+      { category: "Creative Spark", title: "Reverse Engineering", description: "Look at a finished product nearby. Mentally break it down into its raw materials (plastic, metal, glass, ink)." },
+      { category: "Creative Spark", title: "The Alien Perspective", description: "Describe your job to an alien who has no concept of money, computers, or business." },
+      { category: "Creative Spark", title: "Color Hunt", description: "Look around. Find the most unusual color you can see. Give it a creative name (e.g., 'Burnt Sunset Orange')." },
+      { category: "Creative Spark", title: "Bad Ideas Only", description: "What is the worst possible solution to your current problem? Sometimes listing bad ideas unlocks the good ones." },
+      { category: "Creative Spark", title: "Six-Word Story", description: "Write a story about your day using exactly six words." },
+      { category: "Creative Spark", title: "The Metaphor", description: "Complete the sentence: 'My current workload feels like...'" },
+      { category: "Creative Spark", title: "Left Handed", description: "Write your name with your non-dominant hand. It forces your brain to engage differently." },
+      { category: "Creative Spark", title: "Constraint", description: "Imagine you have to finish your work today without using email. How would you solve that problem?" },
+      { category: "Creative Spark", title: "Re-Title", description: "Give your current role a movie title (e.g., 'The Keeper of the Spreadsheets')." },
+      { category: "Creative Spark", title: "Pattern Spotting", description: "Look at the wall, floor, or ceiling. Find a shape that looks like a face or an animal." },
+      { category: "Creative Spark", title: "The Mashup", description: "Combine two unrelated objects on your desk (e.g., stapler + plant). What would that invention do?" },
+      { category: "Creative Spark", title: "Alphabet Drill", description: "Pick a letter. Look around the room and find 3 things that start with that letter." },
+      { category: "Creative Spark", title: "Blind Drawing", description: "Close your eyes. Try to draw a star on a piece of paper without lifting your pen." },
+      { category: "Creative Spark", title: "The Remix", description: "Take a common phrase (e.g., 'The early bird catches the worm') and rewrite it to make it funny or modern." },
+      { category: "Creative Spark", title: "Silent Movie", description: "Watch people (or pets) outside for 1 minute. Invent a dialogue for what they are saying." },
+      { category: "Creative Spark", title: "Soundtrack", description: "What song would play during the opening credits of a movie about your life right now?" },
+      { category: "Creative Spark", title: "Texture Mapping", description: "Find 3 different textures within reach. Describe them without using the words 'smooth' or 'rough'." },
+      { category: "Creative Spark", title: "The Time Machine", description: "How would someone 100 years ago do your job? Visualize it." },
+      { category: "Creative Spark", title: "Impossible Object", description: "Imagine a chair that is impossible to sit on. What does it look like?" },
+      { category: "Creative Spark", title: "Word Association", description: "Pick a word (e.g., 'Cloud'). Quickly list 5 words associated with it. Go fast." },
+      { category: "Creative Spark", title: "Zoom In", description: "Look closely at the palm of your hand. Notice the lines and patterns you usually ignore." },
+      { category: "Creative Spark", title: "Shadow Play", description: "Make a shadow puppet with your hand against the desk. What is it?" },
+      { category: "Creative Spark", title: "The Why Game", description: "Ask 'Why?' about a problem you have. Then ask 'Why?' to that answer. Do it 5 times to find the root." },
+      { category: "Creative Spark", title: "Object Story", description: "Pick a random item. Invent a backstory for where it came from before it reached your desk." },
+      { category: "Creative Spark", title: "Future Forecast", description: "Predict one specific thing that will happen by 5:00 PM today." },
+      { category: "Creative Spark", title: "The Opposite", description: "What is the exact opposite of the task you are doing right now?" },
+      { category: "Creative Spark", title: "Silent Jam", description: "Drum a beat on your knees. Create a rhythm." },
+
+      // -- PRODUCTIVITY FLOW (Focus Tools) --
+      { category: "Productivity Flow", title: "The 2-Minute Rule", description: "Scan your to-do list. Is there anything that can be done in 2 minutes or less? Do it right now. Clear the mental clutter." },
+      { category: "Productivity Flow", title: "Eat the Frog", description: "Identify your most dreaded task. Commit to working on it for just 10 minutes. Action cures fear." },
+      { category: "Productivity Flow", title: "Single-Tasking", description: "Close all browser tabs except the one you need. Put your phone face down. Do one thing for 15 minutes." },
+      { category: "Productivity Flow", title: "Pomodoro Set", description: "Set a timer for 25 minutes. Work with intense focus. Promise yourself a break when the timer rings." },
+      { category: "Productivity Flow", title: "The 'Done' List", description: "Instead of a to-do list, write down 3 things you have already finished today. Momentum builds motivation." },
+      { category: "Productivity Flow", title: "Batching", description: "Group similar small tasks (emails, slack replies) and do them all at once in a 20-minute blitz." },
+      { category: "Productivity Flow", title: "The Next Step", description: "If you are stuck, write down the very next physical action (e.g., 'Open Word Doc'). Make it too small to resist." },
+      { category: "Productivity Flow", title: "Visualizing the End", description: "Close your eyes. Visualize how you will feel when this current task is 100% complete. Hold that feeling." },
+      { category: "Productivity Flow", title: "Distraction Park", description: "Keep a sticky note nearby. If a random thought pops up, write it down to 'park' it for later, then get back to work." },
+      { category: "Productivity Flow", title: "Notification Fast", description: "Turn on 'Do Not Disturb' for the next 30 minutes. Protect your attention." },
+      { category: "Productivity Flow", title: "The 5-Second Rule", description: "Don't feel like starting? Count backwards 5-4-3-2-1-GO and physically move to start the task." },
+      { category: "Productivity Flow", title: "Identify the Bottleneck", description: "What is the one thing stopping you from moving forward? Is it information? Energy? Fear? Name it." },
+      { category: "Productivity Flow", title: "Template It", description: "Are you writing an email you've written before? Create a template or snippet to save time next time." },
+      { category: "Productivity Flow", title: "Clean Slate", description: "Close all windows on your computer. Start fresh with only the tools you need for this specific task." },
+      { category: "Productivity Flow", title: "Body Doubling", description: "If you are struggling, tell a colleague: 'I'm going to work on X for 30 minutes.' Accountability helps." },
+      { category: "Productivity Flow", title: "Theme Song", description: "Put on a song that makes you feel productive. Use it as a Pavlovian trigger for work." },
+      { category: "Productivity Flow", title: "Reframing", description: "Change 'I have to do this' to 'I get to move this forward'. Agency changes energy." },
+      { category: "Productivity Flow", title: "Prioritize Impact", description: "Which item on your list will have the biggest impact? Circle it. Ignore the rest for now." },
+      { category: "Productivity Flow", title: "Transition Ritual", description: "Stand up, stretch, and sit back down. Signal to your brain that you are shifting gears to a new task." },
+      { category: "Productivity Flow", title: "Delegation Check", description: "Is this a task only you can do? If not, can it be automated or delegated?" },
+      { category: "Productivity Flow", title: "Perfect is the Enemy", description: "Remind yourself: 'B+ work is better than A+ work that never gets finished.'" },
+      { category: "Productivity Flow", title: "Hydrate to Focus", description: "Brain fog is often dehydration. Drink a full glass of water before starting the next task." },
+      { category: "Productivity Flow", title: "Reward System", description: "Tell yourself: 'When I finish this email, I will go get a fresh coffee.' Work for the reward." },
+      { category: "Productivity Flow", title: "Review Goals", description: "Look at your weekly goals. Does your current task align with them? If not, why are you doing it?" },
+      { category: "Productivity Flow", title: "Deep Work Zone", description: "Put on headphones (even if no music is playing). It signals 'Do Not Disturb' to others and yourself." },
+      { category: "Productivity Flow", title: "Output over Input", description: "Stop researching (input) and start creating (output). You likely have enough info to start." },
+      { category: "Productivity Flow", title: "The 1-3-5 Rule", description: "Aim to accomplish 1 big thing, 3 medium things, and 5 small things today." },
+      { category: "Productivity Flow", title: "Friction Audit", description: "Remove one barrier to starting (e.g., leave the document open on your screen)." },
+      { category: "Productivity Flow", title: "Self-Contract", description: "Sign a mental contract: 'I will not check my phone until this section is done.'" },
+      { category: "Productivity Flow", title: "Progress Bar", description: "Draw a progress bar on a post-it. Fill it in as you complete chunks of the task." },
+
+      // -- EVENING WIND-DOWN (Shutdown Ritual) --
+      { category: "Evening Wind-Down", title: "Open Loops", description: "Write down any tasks you didn't finish. Getting them out of your head onto paper allows your brain to disconnect." },
+      { category: "Evening Wind-Down", title: "Tomorrow's Top 3", description: "Identify the 3 most important tasks for tomorrow morning. Decision made. No morning panic." },
+      { category: "Evening Wind-Down", title: "Clean Desk Policy", description: "Tidy your workspace. Arrange your keyboard and mouse. Allow your future self to walk into a clean office." },
+      { category: "Evening Wind-Down", title: "Tab Closure", description: "Close every single browser tab. If it's important, bookmark it. End the digital noise." },
+      { category: "Evening Wind-Down", title: "The Commute", description: "If you work from home, simulate a commute. Walk around the block or listen to a song to mark the end of the day." },
+      { category: "Evening Wind-Down", title: "Gratitude Cap", description: "What is one thing that went well today? End on a high note, even if the day was hard." },
+      { category: "Evening Wind-Down", title: "Physical Shake-Off", description: "Stand up and physically shake your arms and legs. Shake off the work day stress." },
+      { category: "Evening Wind-Down", title: "Door Close", description: "If you have an office door, close it. If not, cover your computer. Create a physical boundary." },
+      { category: "Evening Wind-Down", title: "Transition Outfit", description: "Change out of your work clothes immediately. Signal to your body that work is over." },
+      { category: "Evening Wind-Down", title: "Notification Sunset", description: "Turn off work notifications on your phone. Reclaim your personal time." },
+      { category: "Evening Wind-Down", title: "Watering the Plants", description: "Take a moment to tend to a plant or pet. Shift from 'productive' mode to 'nurturing' mode." },
+      { category: "Evening Wind-Down", title: "Final Email Sweep", description: "Check your inbox one last time. Flag urgent items for tomorrow. Then close it for good." },
+      { category: "Evening Wind-Down", title: "Victory Log", description: "Write down one success from today, no matter how small. Acknowledge your effort." },
+      { category: "Evening Wind-Down", title: "The Deep Breath", description: "Sit for 1 minute in silence. Take 3 deep breaths. Visualize the workday fading to gray." },
+      { category: "Evening Wind-Down", title: "Schedule Check", description: "Glance at tomorrow's calendar. Know when your first meeting is so you can sleep unprepared." },
+      { category: "Evening Wind-Down", title: "Logout", description: "Actually log out or shut down your computer. The whir of the fan stopping is a powerful cue." },
+      { category: "Evening Wind-Down", title: "Light Shift", description: "Turn off the bright overhead office light. Turn on a softer lamp or natural light." },
+      { category: "Evening Wind-Down", title: "Music Shift", description: "Switch from 'focus music' to 'relaxing music' or silence." },
+      { category: "Evening Wind-Down", title: "Stretch it Out", description: "Do one big overhead stretch. Release the posture of sitting." },
+      { category: "Evening Wind-Down", title: "Say Goodbye", description: "Say 'Goodnight' to your team in chat. Sign off officially." },
+      { category: "Evening Wind-Down", title: "Water Bottle Wash", description: "Take your water bottle to the kitchen to wash. Don't leave it stagnant overnight." },
+      { category: "Evening Wind-Down", title: "Forgiveness", description: "Forgive yourself for what you didn't get done today. You did enough." },
+      { category: "Evening Wind-Down", title: "Evening Intention", description: "Set an intention for your evening: 'I will be present with my family' or 'I will rest'." },
+      { category: "Evening Wind-Down", title: "Device Dock", description: "Put your work devices in a drawer or specific charging station out of sight." },
+      { category: "Evening Wind-Down", title: "Glasses Off", description: "If you wear blue light glasses, take them off. The work day is done." },
+      { category: "Evening Wind-Down", title: "Rub the Eyes", description: "Gently massage your temples and eyes. Release the screen strain." },
+      { category: "Evening Wind-Down", title: "The Mantra", description: "Say out loud: 'Work is done. I am home.'" },
+      { category: "Evening Wind-Down", title: "Temperature Change", description: "Step outside for fresh air or change the thermostat. Feel a difference." },
+      { category: "Evening Wind-Down", title: "Tea Ritual", description: "Make a cup of herbal tea to bridge the gap between work and rest." },
+      { category: "Evening Wind-Down", title: "Silence the ringer", description: "Put your phone on silent for the first hour of your evening." },
       // --- ORIENTEERING (Generator) ---
       { category: "Orienteering", title: "Orienteering Challenge", description: "Dynamic challenge: Generates random azimuth/elevation to hold gaze.", isGenerator: true }
     ];
