@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "Pain Management": "Somatic Relief",
         "Journal Prompt": "Self-Reflection",
         "Neck Mobility & Relief": "Tension Release"
+        "Social Connection": "Team Connection",   
+        "Workspace Zen": "Environment"  
     };
 
     // Icons to add visual flair to the cards
@@ -40,13 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Neck Mobility & Relief": "🧣"
     };
 
-    // ==========================================
-    //  MASSIVE DATABASE OF ACTIVITIES
-    // ==========================================
-
-    // ==========================================
-    //  MASSIVE DATABASE OF ACTIVITIES
-    // ==========================================
+    
     const allActivities = [
       
       // --- SITTING MOVEMENT (Refined + Expanded + 50 New) ---
@@ -2132,6 +2128,111 @@ document.addEventListener('DOMContentLoaded', () => {
       { category: "Journal Prompt", title: "Connection", description: "What makes you feel connected to others?" },
       { category: "Journal Prompt", title: "Isolation", description: "When do you feel isolated from your community?" },
       { category: "Journal Prompt", title: "Belonging", description: "Where do you feel you truly belong?" },
+
+      // --- BATCH 9: SOCIAL CONNECTION (Teams/WFH) & WORKSPACE ZEN ---
+      
+      // -- SOCIAL CONNECTION (WFH/Teams Edition) --
+      { category: "Social Connection", title: "The GIF React", description: "Find a GIF that perfectly captures your current mood. Post it in your team chat or send it to a work friend." },
+      { category: "Social Connection", title: "The Emoji Check-In", description: "Send a message to a colleague: 'Describe your morning using only 3 emojis.' It's a quick, low-stress way to connect." },
+      { category: "Social Connection", title: "The Digital High-Five", description: "Scroll up in your Teams chat. Find the last helpful thing someone posted and react with a 'Heart' or 'Applause' emoji." },
+      { category: "Social Connection", title: "The Status Update", description: "Change your Teams status message to something human. Examples: 'Powered by coffee', 'Heads down focusing', or an inspiring quote." },
+      { category: "Social Connection", title: "The Gratitude DM", description: "Send a direct message to a coworker: 'Hey, I just wanted to say I appreciate [specific thing].' No request attached." },
+      { category: "Social Connection", title: "The Pet/Plant Cameo", description: "Take a picture of your pet, plant, or view. Drop it in the chat with the caption: 'My coworker is being quiet today.'" },
+      { category: "Social Connection", title: "The Music Share", description: "Drop a link to the song or playlist you are listening to right now into the team chat." },
+      { category: "Social Connection", title: "The 'How Are You?'", description: "Ask a colleague 'How are you actually doing?' and wait for the answer. Don't jump straight to work topics." },
+      { category: "Social Connection", title: "The Knowledge Drop", description: "Did you learn a cool keyboard shortcut or trick recently? Share it in the general channel." },
+      { category: "Social Connection", title: "The Virtual Coffee", description: "Send a calendar invite for a 10-minute 'Virtual Coffee' with someone you haven't spoken to in a while. No agenda." },
+      { category: "Social Connection", title: "The Recommendation", description: "Ask the chat: 'I need a show to watch this weekend. What is everyone watching?'" },
+      { category: "Social Connection", title: "The LinkedIn Boost", description: "Go to LinkedIn. Write a genuine recommendation for a colleague or endorse a skill. It takes 2 minutes but lasts forever." },
+      { category: "Social Connection", title: "The Lunch Pic", description: "Post a photo of your lunch. Ask 'What is everyone fueling up with?' Food is a universal connector." },
+      { category: "Social Connection", title: "The Weekend Win", description: "Ask one person: 'What was the best part of your weekend?'" },
+      { category: "Social Connection", title: "The Time Travel", description: "Share a throwback photo or memory in the chat. 'Remember when we worked on [project]?'" },
+      { category: "Social Connection", title: "The Help Offer", description: "Post in the chat: 'I have 10 minutes free. Does anyone need a second pair of eyes on something?'" },
+      { category: "Social Connection", title: "The Celebrate", description: "Did someone do a good job? Tag them publicly in the main channel and say 'Great work on X'." },
+      { category: "Social Connection", title: "The Daily Poll", description: "Create a quick Teams poll (e.g., 'Coffee or Tea?', 'Pineapple on Pizza?'). Low stakes engagement." },
+      { category: "Social Connection", title: "The Desk Tour", description: "Snap a photo of your current desk setup (messy or clean). Share it. 'Current situation.'" },
+      { category: "Social Connection", title: "The Meme Share", description: "Find a work-appropriate meme about your specific industry. Share it for a laugh." },
+      { category: "Social Connection", title: "The Bio Break", description: "Post 'BRB - Stretching' in your chat. It encourages others to take care of themselves too." },
+      { category: "Social Connection", title: "The Skill Swap", description: "Ask the chat: 'Does anyone know how to [specific Excel/software tip]?' Even if you know, it lets others feel helpful." },
+      { category: "Social Connection", title: "The Trivia", description: "Drop a random fun fact in the chat. 'Did you know...?'" },
+      { category: "Social Connection", title: "The Good News", description: "Share one piece of positive news (personal or professional) with the team." },
+      { category: "Social Connection", title: "The Camera On", description: "For your next meeting, be the first to turn your camera on and smile. It sets the tone." },
+      { category: "Social Connection", title: "The Unmute", description: "In a meeting, unmute to laugh at a joke instead of just typing 'lol'. It sounds more human." },
+      { category: "Social Connection", title: "The After-Meeting", description: "Stay on the call for 2 minutes after it ends just to chat with whoever is left." },
+      { category: "Social Connection", title: "The Quote", description: "Share a quote that is motivating you today." },
+      { category: "Social Connection", title: "The Stretch Buddy", description: "Message a friend: 'I'm doing 10 squats. Join me?'" },
+      { category: "Social Connection", title: "The Water Check", description: "Ping the chat: 'Hydration check. Everyone drink water.'" },
+      { category: "Social Connection", title: "The Focus Mode", description: "Tell your team: 'Going heads down for 1 hour.' Setting boundaries is a form of communication." },
+      { category: "Social Connection", title: "The 'Thinking of You'", description: "If a colleague is out sick or on leave, send a brief 'Hope you're well' message." },
+      { category: "Social Connection", title: "The Weather Report", description: "If your team is distributed, ask: 'What's the weather like in [City] today?'" },
+      { category: "Social Connection", title: "The Avatar Update", description: "Update your profile picture to something new." },
+      { category: "Social Connection", title: "The Hobby Share", description: "Mention a hobby you are working on. 'I'm knitting a scarf.' Humanizes you beyond the job." },
+      { category: "Social Connection", title: "The Book Club", description: "Ask if anyone has read a specific book recently." },
+      { category: "Social Connection", title: "The Joke", description: "Tell a 'Dad Joke' in the chat. Groans count as engagement." },
+      { category: "Social Connection", title: "The Tech Support", description: "If someone is struggling with IT, offer to hop on a quick screen-share." },
+      { category: "Social Connection", title: "The Meeting Breaker", description: "Start a meeting by asking a non-work icebreaker question." },
+      { category: "Social Connection", title: "The Compliment Bomb", description: "Pick a person. Ask others to chime in with one thing they like about working with them." },
+      { category: "Social Connection", title: "The Inspiration", description: "Share a design, article, or video that inspired you." },
+      { category: "Social Connection", title: "The Routine", description: "Ask: 'What is your favorite part of your morning routine?'" },
+      { category: "Social Connection", title: "The Snack", description: "Debate the best desk snack in the chat." },
+      { category: "Social Connection", title: "The Weekend Plans", description: "On Friday, ask: 'Who has an adventure planned?'" },
+      { category: "Social Connection", title: "The Monday Mood", description: "On Monday, ask: 'What is the vibe for the week?'" },
+      { category: "Social Connection", title: "The Gif Response", description: "Respond to a serious email with a (appropriate) gif in Teams to lighten the mood." },
+      { category: "Social Connection", title: "The Voice Note", description: "If your platform allows, send a voice note instead of text. Tone is easier to read." },
+      { category: "Social Connection", title: "The Victory Lap", description: "Did the team finish a project? Post a 'We did it!' celebration message." },
+      { category: "Social Connection", title: "The Transparency", description: "Admit a small mistake or confusion. 'I totally forgot how to do X.' Vulnerability builds trust." },
+      { category: "Social Connection", title: "The Sign Off", description: "When you leave for the day, say 'Goodbye' or 'Have a good evening' in the chat. Don't ghost." },
+
+      // -- WORKSPACE ZEN (Environment) --
+      { category: "Workspace Zen", title: "The 12-Inch Rule", description: "Clear everything from the 12-inch square directly in front of you. Create a clean visual field for focus." },
+      { category: "Workspace Zen", title: "Cable Taming", description: "Find one loose cable. Use a twist tie, clip, or tape to secure it. Visual clutter creates mental clutter." },
+      { category: "Workspace Zen", title: "Lighting Audit", description: "Is your main light source behind you (glare) or in front of you (squinting)? Adjust your lamp or blinds for softer, indirect light." },
+      { category: "Workspace Zen", title: "The Coaster Check", description: "Do you have a dedicated spot for your drink? If not, get a coaster or napkin. Create a home for your hydration." },
+      { category: "Workspace Zen", title: "Scent Reset", description: "If you are at home, light a candle or use a diffuser. Scent (citrus or mint) is a powerful cue for focus." },
+      { category: "Workspace Zen", title: "Screen Wipe", description: "Turn off your monitor for 10 seconds. Use a cloth to wipe away dust and fingerprints. Enjoy the clarity." },
+      { category: "Workspace Zen", title: "Keyboard Shake", description: "Turn your keyboard upside down and gently shake it. You'd be surprised what falls out." },
+      { category: "Workspace Zen", title: "The Greenery", description: "If you have a plant, move it into your peripheral vision. Seeing nature reduces cortisol." },
+      { category: "Workspace Zen", title: "Airflow", description: "Open a window or turn on a fan. Stagnant air leads to a stagnant mind. Get oxygen moving." },
+      { category: "Workspace Zen", title: "Trash Run", description: "Is there a wrapper, old sticky note, or receipt on your desk? Throw it away right now." },
+      { category: "Workspace Zen", title: "Notebook Fresh", description: "Turn to a fresh, blank page in your notebook. A clean slate for your next thought." },
+      { category: "Workspace Zen", title: "Pen Test", description: "Test the pens on your desk. Throw away any that don't write perfectly. Don't fight your tools." },
+      { category: "Workspace Zen", title: "Chair Adjustment", description: "Check your lumbar support. Can you make a micro-adjustment to make your chair 5% more comfortable?" },
+      { category: "Workspace Zen", title: "The Door", description: "If you have a door, close it for 10 minutes. If not, put on headphones. Signal to your brain that you are in a container." },
+      { category: "Workspace Zen", title: "Digital Desktop", description: "Hide all desktop icons for 5 minutes. Enjoy the clean wallpaper. Visual silence." },
+      { category: "Workspace Zen", title: "Mouse Cleaning", description: "Wipe the bottom of your mouse or check the sensor. Ensure it glides smoothly." },
+      { category: "Workspace Zen", title: "The Stack", description: "Take any loose papers and stack them neatly in one pile. Straight lines calm the brain." },
+      { category: "Workspace Zen", title: "Notification Purge", description: "Clear the physical red bubbles on your phone or slack. Get to 'Inbox Zero' visually, even if not operationally." },
+      { category: "Workspace Zen", title: "Glass Water", description: "Pour water into a real glass, not a plastic bottle. The weight and texture feel more grounding." },
+      { category: "Workspace Zen", title: "Foot Zone", description: "Look under your desk. Are there cables or boxes restricting your feet? Clear the space so you can stretch legs fully." },
+      { category: "Workspace Zen", title: "Height Adjustment", description: "If your chair lifts, change the height by an inch to shift pressure points on your thighs." },
+      { category: "Workspace Zen", title: "Object of Joy", description: "Place one item (photo, toy, souvenir) on your desk that makes you smile. Put it where you can see it." },
+      { category: "Workspace Zen", title: "The View", description: "Rotate your chair or screen slightly so you can see a window or a distance point. Open up the room." },
+      { category: "Workspace Zen", title: "Surface Texture", description: "Is your desk sticky or dusty? Use a damp cloth to wipe the surface where your wrists rest." },
+      { category: "Workspace Zen", title: "Headphone Stand", description: "Find a specific place to rest your headphones when not in use. Don't let them clutter the keyboard area." },
+      { category: "Workspace Zen", title: "Background Noise", description: "Switch your environment sound. If it's silent, try white noise. If it's noisy, try noise-canceling." },
+      { category: "Workspace Zen", title: "The Drawer", description: "Open your top drawer. Organize just the pencils/pens. Close it. Small order creates calm." },
+      { category: "Workspace Zen", title: "Monitor Angle", description: "Tilt your monitor slightly back or forward to reduce glare. Optimize for your current sitting height." },
+      { category: "Workspace Zen", title: "Sticky Note Purge", description: "Read your sticky notes. If a task is done, throw the note away. If it's old, transcribe it and toss it." },
+      { category: "Workspace Zen", title: "Personal Boundary", description: "If you share space, define your 'office' area with a rug or object arrangement." },
+      { category: "Workspace Zen", title: "Charger Check", description: "Ensure your phone charger is plugged in and accessible so you aren't hunting for it at 1% battery." },
+      { category: "Workspace Zen", title: "Reference Material", description: "If you use a specific document often, pin it up or bookmark it. Reduce the friction of finding it." },
+      { category: "Workspace Zen", title: "Thermostat", description: "Are you too cold? Put on a sweater. Too hot? Fan. Don't ignore thermal discomfort." },
+      { category: "Workspace Zen", title: "Shoe Removal", description: "If you are at home, take off your shoes. Feel the carpet or floor. Signal relaxation to your feet." },
+      { category: "Workspace Zen", title: " coaster", description: "Get a coaster." },
+      { category: "Workspace Zen", title: "Ambient Light", description: "If it is evening, turn on 'Night Light' or 'f.lux' on your monitor to yellow the screen." },
+      { category: "Workspace Zen", title: "The Clock", description: "If watching the clock stresses you out, remove it from your taskbar or cover it." },
+      { category: "Workspace Zen", title: "Speaker Check", description: "Test your speakers with a soothing song to ensure audio quality is pleasant, not tinny." },
+      { category: "Workspace Zen", title: "Backup Check", description: "Take a moment to ensure your files are saved. Digital safety is part of environmental zen." },
+      { category: "Workspace Zen", title: "Close Tabs", description: "Close every browser tab that is not related to the task you are doing *right now*." },
+      { category: "Workspace Zen", title: "Empty Mug", description: "Take any old coffee mugs or water glasses to the kitchen. Reset the desk." },
+      { category: "Workspace Zen", title: "Phone Home", description: "Put your phone in a specific 'home' spot, face down, for the next 20 minutes." },
+      { category: "Workspace Zen", title: "Dust Bunnies", description: "Check behind your monitor. Swipe away any dust accumulation." },
+      { category: "Workspace Zen", title: "Visual Anchor", description: "Choose one spot on the wall to be your 'gaze rest' spot. Ensure it's pleasant to look at." },
+      { category: "Workspace Zen", title: "Inventory", description: "Do you have enough staples? Paper? Check supplies now so you don't run out during a crisis." },
+      { category: "Workspace Zen", title: "Mirror", description: "If you have a mirror, angle it so you can't see yourself working. It reduces self-consciousness." },
+      { category: "Workspace Zen", title: "Book Stack", description: "Straighten any books or notebooks on your desk. Align edges." },
+      { category: "Workspace Zen", title: "Cord Slack", description: "Ensure your laptop power cord isn't a trip hazard. Route it safely." },
+      { category: "Workspace Zen", title: "Final Sweep", description: "Stand up. Look at your desk. Move one item to make it look 1% better." },
 
       // --- ORIENTEERING (Generator) ---
       { category: "Orienteering", title: "Orienteering Challenge", description: "Dynamic challenge: Generates random azimuth/elevation to hold gaze.", isGenerator: true }
